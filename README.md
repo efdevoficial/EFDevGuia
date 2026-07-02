@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://i.imgur.com/JtejKos.png" width="100%" alt="Banner EFDev" wight:100px>
+<img src="https://i.imgur.com/JtejKos.png" width="50%" alt="Banner EFDev">
 
 # EFDev - Guia para Programação
 
