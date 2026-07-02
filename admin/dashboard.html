@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Painel Administrativo | EFDev</title>
+
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="css/admin.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <main class="dashboard-layout">
+
+        <!-- SIDEBAR -->
+
+        <aside class="sidebar">
+
+            <div class="sidebar-logo">
+
+                <span>EF</span>Admin
+
+            </div>
+
+            <nav class="sidebar-menu">
+
+                <a class="active">
+
+                    📊 Dashboard
+
+                </a>
+
+                <a href="usuarios.html">
+
+                    👥 Usuários
+
+                </a>
+
+                <a href="roadmap.html">
+
+                    🗺 Roadmap
+
+                </a>
+
+                <a href="quizzes.html">
+
+                    ❓ Quizzes
+
+                </a>
+
+                <a href="instituicoes.html">
+
+                    🎓 Instituições
+
+                </a>
+
+                <a href="ferramentas.html">
+
+                    🛠 Ferramentas
+
+                </a>
+
+                <a href="conquistas.html">
+
+                    🏆 Conquistas
+
+                </a>
+
+                <a href="estatisticas.html">
+
+                    📈 Estatísticas
+
+                </a>
+
+            </nav>
+
+        </aside>
+
+        <!-- CONTEÚDO -->
+
+        <section class="dashboard-content">
+
+            <header class="dashboard-header">
+
+                <div>
+
+                    <h1>
+
+                        Painel Administrativo
+
+                    </h1>
+
+                    <p>
+
+                        Gerencie toda a plataforma EFDev.
+
+                    </p>
+
+                </div>
+
+            </header>
+
+            <!-- CARDS -->
+
+            <section class="admin-grid">
+
+                <article class="admin-card">
+
+                    <span>👥</span>
+
+                    <h2 id="usersCount">
+
+                        0
+
+                    </h2>
+
+                    <p>
+
+                        Usuários
+
+                    </p>
+
+                </article>
+
+                <article class="admin-card">
+
+                    <span>🗺</span>
+
+                    <h2 id="roadmapCount">
+
+                        0
+
+                    </h2>
+
+                    <p>
+
+                        Níveis
+
+                    </p>
+
+                </article>
+
+                <article class="admin-card">
+
+                    <span>❓</span>
+
+                    <h2 id="quizCount">
+
+                        0
+
+                    </h2>
+
+                    <p>
+
+                        Quizzes
+
+                    </p>
+
+                </article>
+
+                <article class="admin-card">
+
+                    <span>🎓</span>
+
+                    <h2 id="institutionCount">
+
+                        0
+
+                    </h2>
+
+                    <p>
+
+                        Instituições
+
+                    </p>
+
+                </article>
+
+                <article class="admin-card">
+
+                    <span>🛠</span>
+
+                    <h2 id="toolCount">
+
+                        0
+
+                    </h2>
+
+                    <p>
+
+                        Ferramentas
+
+                    </p>
+
+                </article>
+
+                <article class="admin-card">
+
+                    <span>🏆</span>
+
+                    <h2 id="achievementCount">
+
+                        0
+
+                    </h2>
+
+                    <p>
+
+                        Conquistas
+
+                    </p>
+
+                </article>
+
+            </section>
+
+            <!-- MÓDULOS -->
+
+            <section class="modules-grid">
+
+                <a href="usuarios.html" class="module">
+
+                    👥
+
+                    <h3>
+
+                        Usuários
+
+                    </h3>
+
+                    <p>
+
+                        Editar usuários da plataforma.
+
+                    </p>
+
+                </a>
+
+                <a href="roadmap.html" class="module">
+
+                    🗺
+
+                    <h3>
+
+                        Roadmap
+
+                    </h3>
+
+                    <p>
+
+                        Adicionar novos níveis.
+
+                    </p>
+
+                </a>
+
+                <a href="quizzes.html" class="module">
+
+                    ❓
+
+                    <h3>
+
+                        Quizzes
+
+                    </h3>
+
+                    <p>
+
+                        Criar perguntas.
+
+                    </p>
+
+                </a>
+
+                <a href="instituicoes.html" class="module">
+
+                    🎓
+
+                    <h3>
+
+                        Instituições
+
+                    </h3>
+
+                    <p>
+
+                        Gerenciar locais de estudo.
+
+                    </p>
+
+                </a>
+
+                <a href="ferramentas.html" class="module">
+
+                    🛠
+
+                    <h3>
+
+                        Ferramentas
+
+                    </h3>
+
+                    <p>
+
+                        Editar ferramentas.
+
+                    </p>
+
+                </a>
+
+                <a href="conquistas.html" class="module">
+
+                    🏆
+
+                    <h3>
+
+                        Conquistas
+
+                    </h3>
+
+                    <p>
+
+                        Criar medalhas.
+
+                    </p>
+
+                </a>
+
+            </section>
+
+        </section>
+
+    </main>
+
+<script src="../js/storage.js"></script>
+
+<script src="../data/roadmap.js"></script>
+
+<script src="../data/quizzes.js"></script>
+
+<script src="../data/instituicoes.js"></script>
+
+<script src="../data/ferramentas.js"></script>
+
+<script src="../data/conquistas.js"></script>
+
+<script src="js/admin.js"></script>
+
+</body>
+
+</html>

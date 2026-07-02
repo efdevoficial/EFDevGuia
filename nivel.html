@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EFDev | Nível</title>
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/nivel.css">
+    <link rel="stylesheet" href="css/toast.css">
+    <link rel="shortcut icon" href="assets/logos/Logo EFDev.png" type="image/x-icon">
+
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <main class="dashboard-layout">
+
+        <!-- SIDEBAR -->
+
+        <aside class="sidebar">
+
+            <div class="sidebar-logo">
+
+                <img src="assets/logos/Logo EFDev.png" alt="EFDev">
+
+            </div>
+
+            <nav class="sidebar-menu">
+                <a href="dashboard.html" class="active">🏠 Dashboard</a>
+                <a href="perfil.html">👤 Perfil</a>
+                <a href="conquistas.html">🏆 Conquistas</a>
+                <a href="instituicoes.html">🎓 Instituições</a>
+                <a href="ferramentas.html">🛠 Ferramentas</a>
+                <a href="sobre.html">ℹ️ Sobre</a>
+                <a href="configuracoes.html">⚙️ Configurações</a>
+            </nav>
+
+        </aside>
+
+        <!-- CONTEÚDO -->
+
+        <section class="dashboard-content">
+
+            <!-- CABEÇALHO -->
+
+            <header class="dashboard-header">
+
+                <div>
+
+                    <span id="levelIcon" class="badge">
+
+                        🚀
+
+                    </span>
+
+                    <h1 id="levelTitle">
+
+                        Carregando...
+
+                    </h1>
+
+                    <p id="levelDescription">
+
+                        Aguarde...
+
+                    </p>
+
+                </div>
+
+            </header>
+
+            <!-- CARDS -->
+
+            <section class="stats-grid">
+
+                <article class="stat-card">
+
+                    <span>XP ao concluir</span>
+
+                    <h2 id="levelXP">
+
+                        0
+
+                    </h2>
+
+                </article>
+
+                <article class="stat-card">
+
+                    <span>Dificuldade</span>
+
+                    <h2 id="levelDifficulty">
+
+                        -
+
+                    </h2>
+
+                </article>
+
+                <article class="stat-card">
+
+                    <span>Tempo médio</span>
+
+                    <h2 id="levelTime">
+
+                        -
+
+                    </h2>
+
+                </article>
+
+            </section>
+
+            <!-- TÓPICOS -->
+            <section class="panel intro-panel">
+                <div class="section-heading">
+                    <h2 id="introTitle">📌 Introdução</h2>
+                </div>
+
+                <p id="introText"></p>
+
+                <pre class="code-box"><code id="introCode"></code></pre>
+            </section>
+            <section class="panel">
+
+                <div class="section-heading">
+
+                    <h2>
+
+                        📚 O que estudar
+
+                    </h2>
+
+                </div>
+
+                <ul id="topicsList" class="content-list">
+
+                </ul>
+
+            </section>
+
+            <!-- FERRAMENTAS -->
+
+            <section class="panel">
+
+                <div class="section-heading">
+
+                    <h2>
+
+                        🛠 Ferramentas
+
+                    </h2>
+
+                </div>
+
+                <ul id="toolsList" class="content-list">
+
+                </ul>
+
+            </section>
+
+            <!-- DICAS -->
+
+            <section class="panel">
+
+                <div class="section-heading">
+
+                    <h2>
+
+                        💡 Dicas
+
+                    </h2>
+
+                </div>
+
+                <ul id="tipsList" class="content-list">
+
+                </ul>
+
+            </section>
+
+            <!-- INSTITUIÇÕES -->
+
+            <section class="panel">
+
+                <div class="section-heading">
+
+                    <h2>
+
+                        🎓 Onde estudar
+
+                    </h2>
+
+                </div>
+
+                <ul id="studyList" class="content-list">
+
+                </ul>
+
+            </section>
+
+            <!-- BOTÕES -->
+
+            <section style="
+                    display:flex;
+                    gap:20px;
+                    margin-top:30px;
+                ">
+
+                <a href="dashboard.html" class="btn-secondary">
+
+                    ← Voltar
+
+                </a>
+
+                <button id="quizButton" class="btn-primary">
+
+                    Fazer Quiz
+
+                </button>
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <script src="js/storage.js"></script>
+
+    <script src="data/roadmap.js"></script>
+
+    <script src="js/nivel.js"></script>
+
+    <script src="js/toast.js"></script>
+
+</body>
+
+</html>

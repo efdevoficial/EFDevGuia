@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Perfil | EFDev</title>
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/perfil.css">
+    <link rel="stylesheet" href="css/toast.css">
+    <link rel="shortcut icon" href="assets/logos/Logo EFDev.png" type="image/x-icon">
+
+
+</head>
+
+<body>
+
+    <main class="dashboard-layout">
+
+        <aside class="sidebar">
+
+            <div class="sidebar-logo">
+
+                <img src="assets/logos/Logo EFDev.png" alt="EFDev">
+
+            </div>
+
+            <nav class="sidebar-menu">
+                <a href="dashboard.html" class="active">🏠 Dashboard</a>
+                <a href="perfil.html">👤 Perfil</a>
+                <a href="conquistas.html">🏆 Conquistas</a>
+                <a href="instituicoes.html">🎓 Instituições</a>
+                <a href="ferramentas.html">🛠 Ferramentas</a>
+                <a href="sobre.html">ℹ️ Sobre</a>
+                <a href="configuracoes.html">⚙️ Configurações</a>
+            </nav>
+
+            </a>
+
+            </nav>
+
+        </aside>
+
+        <section class="dashboard-content">
+
+            <div class="profile-header">
+
+                <div class="avatar-large" id="avatar">
+
+                    E
+
+                </div>
+
+                <h1 id="profileName">
+
+                    Carregando...
+
+                </h1>
+
+                <p id="profileEmail">
+
+                    Carregando...
+
+                </p>
+
+            </div>
+
+            <div class="profile-cards">
+
+                <div class="profile-card">
+
+                    <span>XP</span>
+
+                    <h2 id="profileXP">
+
+                        0
+
+                    </h2>
+
+                </div>
+
+                <div class="profile-card">
+
+                    <span>Nível</span>
+
+                    <h2 id="profileLevel">
+
+                        1
+
+                    </h2>
+
+                </div>
+
+                <div class="profile-card">
+
+                    <span>Conquistas</span>
+
+                    <h2 id="profileAchievements">
+
+                        0
+
+                    </h2>
+
+                </div>
+
+                <div class="profile-card">
+
+                    <span>Níveis concluídos</span>
+
+                    <h2 id="profileLevels">
+
+                        0
+
+                    </h2>
+
+                </div>
+
+            </div>
+
+            <section class="panel">
+
+                <div class="section-heading">
+
+                    <h2>
+
+                        📈 Progresso Geral
+
+                    </h2>
+
+                </div>
+
+                <div class="progress-bar">
+
+                    <div id="profileProgress" class="progress-fill">
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="panel">
+
+                <div class="section-heading">
+
+                    <h2>
+
+                        📚 Roadmap Concluído
+
+                    </h2>
+
+                </div>
+
+                <div id="completedRoadmap">
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <script src="js/storage.js"></script>
+    <script src="data/roadmap.js"></script>
+    <script src="js/perfil.js"></script>
+    <script src="js/toast.js"></script>
+</body>
+
+</html>

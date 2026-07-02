@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | EFDev</title>
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="shortcut icon" href="assets/logos/Logo EFDev.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <main class="dashboard-layout">
+
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+
+                <img src="assets/logos/Logo EFDev.png" alt="EFDev">
+
+            </div>
+
+            <nav class="sidebar-menu">
+                <a href="dashboard.html" class="active">🏠 Dashboard</a>
+                <a href="perfil.html">👤 Perfil</a>
+                <a href="conquistas.html">🏆 Conquistas</a>
+                <a href="instituicoes.html">🎓 Instituições</a>
+                <a href="ferramentas.html">🛠 Ferramentas</a>
+                <a href="sobre.html">ℹ️ Sobre</a>
+                <a href="configuracoes.html">⚙️ Configurações</a>
+            </nav>
+
+            <button class="logout-btn" id="logoutBtn">Sair</button>
+        </aside>
+
+        <section class="dashboard-content">
+
+            <header class="dashboard-header">
+                <div>
+                    <h1 id="greetingTitle">Olá, Dev 👋</h1>
+                    <p>Continue sua jornada no guia para programação.</p>
+                </div>
+
+                <div class="user-box">
+                    <div class="avatar" id="userAvatar">D</div>
+                    <div>
+                        <strong id="userName">Usuário</strong>
+                        <span id="userLevel">Iniciante</span>
+                    </div>
+                </div>
+            </header>
+
+            <section class="dashboard-hero">
+                <div>
+                    <span class="badge">🚀 EFDev - Guia para Programação</span>
+                    <h2>Seu próximo passo na programação começa aqui.</h2>
+                    <p>
+                        Acompanhe seu progresso, avance pelos níveis,
+                        desbloqueie conquistas e descubra onde estudar.
+                    </p>
+
+                    <div class="hero-progress">
+                        <div class="progress-info">
+                            <span>Roadmap concluído</span>
+                            <strong id="heroProgressText">0%</strong>
+                        </div>
+
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="heroProgressBar"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-stats">
+                    <article>
+                        <span>XP</span>
+                        <strong id="xpValue">0</strong>
+                    </article>
+
+                    <article>
+                        <span>Nível</span>
+                        <strong id="levelValue">1</strong>
+                    </article>
+
+                    <article>
+                        <span>Conquistas</span>
+                        <strong id="achievementValue">0</strong>
+                    </article>
+                </div>
+            </section>
+
+            <section class="dashboard-main-grid">
+
+                <article class="panel continue-card">
+                    <div class="section-heading">
+                        <h2>📚 Continue estudando</h2>
+                        <span>Próximo passo</span>
+                    </div>
+
+                    <div class="next-level-box">
+                        <div class="next-icon" id="nextIcon">🧠</div>
+
+                        <div>
+                            <h3 id="nextTitle">Fundamentos</h3>
+                            <p id="nextDescription">Carregando próximo nível...</p>
+
+                            <div class="next-meta">
+                                <span id="nextXP">+0 XP</span>
+                                <span id="nextTime">Tempo médio</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn-primary" id="continueBtn">
+                        Continuar
+                    </button>
+                </article>
+
+                <article class="panel tip-card">
+                    <div class="section-heading">
+                        <h2>💡 Dica do dia</h2>
+                    </div>
+
+                    <p id="dailyTip">
+                        Carregando dica...
+                    </p>
+                </article>
+
+                <article class="panel weekly-card">
+                    <div class="section-heading">
+                        <h2>🎯 Meta semanal</h2>
+                        <span id="weeklyPercent">0%</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="weeklyBar"></div>
+                    </div>
+
+                    <ul class="weekly-list">
+                        <li>✅ Acessar a plataforma</li>
+                        <li id="weeklyLevel">⬜ Concluir um nível</li>
+                        <li id="weeklyQuiz">⬜ Fazer um quiz</li>
+                    </ul>
+                </article>
+
+                <article class="panel achievements-preview">
+                    <div class="section-heading">
+                        <h2>🏆 Últimas conquistas</h2>
+                        <a href="conquistas.html">Ver todas</a>
+                    </div>
+
+                    <div id="recentAchievements" class="mini-list"></div>
+                </article>
+
+            </section>
+
+            <section class="dashboard-section">
+                <div class="section-heading">
+                    <h2>🗺 Roadmap de aprendizado</h2>
+                    <span>Avance por etapas</span>
+                </div>
+
+                <div class="roadmap-list" id="roadmapList"></div>
+            </section>
+
+            <section class="dashboard-section">
+
+                <div class="section-heading">
+                    <h2>📚 Recursos Complementares</h2>
+                    <span>Conteúdo recomendado pela EFDev</span>
+                </div>
+
+                <div class="resources-grid">
+
+                    <article class="resource-card">
+
+                        <div class="resource-icon">
+                            📝
+                        </div>
+
+                        <h3>Quiz de Tecnologia da Informação - SENAI</h3>
+
+                        <p>
+                            Coloque seus conhecimentos em prática através deste quiz
+                            contendo perguntas sobre Tecnologia da Informação.
+                            Um excelente recurso para revisar conceitos importantes
+                            aprendidos durante sua jornada de estudos.
+                        </p>
+                        
+                        <a href="https://samrst.github.io/Adedonha-EEP/" target="_blank" class="btn-primary">
+                            Acessar Quiz
+                            
+                        </a>
+                        <br>
+                        <hr>
+                        <br>
+                        <div class="resource-author">
+                            <div>
+                                
+                                <small>Desenvolvido por</small>
+                                
+                                <strong>Sam Rodrigues</strong>
+                                
+                                <span>Estudante de Desenvolvimento de Sistemas • SENAI</span>
+                                <img src="assets/images/Sam-Quiz.jpeg" alt="Imagem Sam Rodrigues" srcset="" width="150">
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+            <section class="dashboard-main-grid">
+
+                <article class="panel">
+                    <div class="section-heading">
+                        <h2>🎓 Instituições recomendadas</h2>
+                        <a href="instituicoes.html">Ver mais</a>
+                    </div>
+
+                    <div id="institutionPreview" class="mini-list"></div>
+                </article>
+
+                <article class="panel">
+                    <div class="section-heading">
+                        <h2>🛠 Ferramentas recomendadas</h2>
+                        <a href="ferramentas.html">Ver mais</a>
+                    </div>
+
+                    <div id="toolsPreview" class="mini-list"></div>
+                </article>
+
+            </section>
+            <section class="dashboard-section future-section">
+                <div class="section-heading">
+                    <h2>🚧 Futuras Atualizações</h2>
+                    <span>Em desenvolvimento</span>
+                </div>
+
+                <div class="future-grid">
+
+                    <article class="future-card">
+                        <div class="future-icon">📊</div>
+                        <h3>Gráficos de Progresso</h3>
+                        <p>Dashboard com gráficos de XP, níveis concluídos e desempenho nos quizzes.</p>
+                    </article>
+
+                    <article class="future-card">
+                        <div class="future-icon">🤖</div>
+                        <h3>Recomendação Inteligente</h3>
+                        <p>Sugestões automáticas sobre o próximo conteúdo ideal para estudar.</p>
+                    </article>
+
+                    <article class="future-card">
+                        <div class="future-icon">🎖️</div>
+                        <h3>Certificado EFDev</h3>
+                        <p>Certificado simbólico ao concluir todo o roadmap da plataforma.</p>
+                    </article>
+
+                    <article class="future-card">
+                        <div class="future-icon">🏫</div>
+                        <h3>Painel de Instituições</h3>
+                        <p>Área administrativa para cadastrar novas instituições e plataformas.</p>
+                    </article>
+
+                    <article class="future-card">
+                        <div class="future-icon">🌙</div>
+                        <h3>Tema Claro e Escuro</h3>
+                        <p>Opção para alternar entre modo claro e modo escuro.</p>
+                    </article>
+
+                    <article class="future-card">
+                        <div class="future-icon">📱</div>
+                        <h3>Versão Mobile Melhorada</h3>
+                        <p>Interface ainda mais otimizada para celulares e tablets.</p>
+                    </article>
+
+                </div>
+            </section>
+        </section>
+
+    </main>
+
+    <script src="js/storage.js"></script>
+    <script src="data/roadmap.js"></script>
+    <script src="data/instituicoes.js"></script>
+    <script src="data/ferramentas.js"></script>
+    <script src="data/dicas.js"></script>
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Criar Conta | EFDev</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/auth.css">
+    <link rel="stylesheet" href="css/toast.css">
+    <link rel="shortcut icon" href="assets/logos/Logo EFDev.png" type="image/x-icon">
+
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <main class="auth-container">
+
+        <!-- ESQUERDA -->
+
+        <section class="auth-left">
+
+            <div class="overlay"></div>
+
+            <div class="left-content">
+
+                <a href="index.html" class="logo">
+                    <span>EF</span>Dev
+                </a>
+
+                <h1>
+
+                    Comece sua jornada.
+
+                </h1>
+
+                <p>
+
+                    Crie sua conta gratuitamente e acompanhe sua evolução
+                    no Roadmap da Programação.
+
+                </p>
+
+                <div class="features">
+
+                    <div class="feature">
+                        <i class="fa-solid fa-road"></i>
+                        <span>Roadmap Interativo</span>
+                    </div>
+
+                    <div class="feature">
+                        <i class="fa-solid fa-star"></i>
+                        <span>Sistema de XP</span>
+                    </div>
+
+                    <div class="feature">
+                        <i class="fa-solid fa-award"></i>
+                        <span>Conquistas</span>
+                    </div>
+
+                    <div class="feature">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Guia para Programação</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- DIREITA -->
+
+        <section class="auth-right">
+
+            <div class="login-card">
+
+                <h2>Criar Conta</h2>
+
+                <p>
+
+                    Preencha os dados abaixo para iniciar.
+
+                </p>
+
+                <form id="registerForm">
+
+                    <!-- Nome -->
+
+                    <div class="input-group">
+
+                        <label>Nome Completo</label>
+
+                        <div class="input-box">
+
+                            <i class="fa-solid fa-user"></i>
+
+                            <input type="text" id="name" placeholder="Digite seu nome" required>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Email -->
+
+                    <div class="input-group">
+
+                        <label>Email</label>
+
+                        <div class="input-box">
+
+                            <i class="fa-solid fa-envelope"></i>
+
+                            <input type="email" id="email" placeholder="Digite seu email" required>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Senha -->
+
+                    <div class="input-group">
+
+                        <label>Senha</label>
+
+                        <div class="input-box">
+
+                            <i class="fa-solid fa-lock"></i>
+
+                            <input type="password" id="password" placeholder="Crie uma senha" required>
+
+                            <button type="button" class="togglePassword">
+
+                                <i class="fa-solid fa-eye"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Confirmar -->
+
+                    <div class="input-group">
+
+                        <label>Confirmar Senha</label>
+
+                        <div class="input-box">
+
+                            <i class="fa-solid fa-lock"></i>
+
+                            <input type="password" id="confirmPassword" placeholder="Confirme sua senha" required>
+
+                            <button type="button" class="togglePassword">
+
+                                <i class="fa-solid fa-eye"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Roadmap -->
+
+                    <div class="input-group">
+
+                        <label>
+
+                            Área de interesse
+
+                        </label>
+
+                        <select id="interest">
+
+                            <option value="web">
+                                Desenvolvimento Web
+                            </option>
+
+                            <option value="backend">
+                                Back-end
+                            </option>
+
+                            <option value="frontend">
+                                Front-end
+                            </option>
+
+                            <option value="mobile">
+                                Mobile
+                            </option>
+
+                            <option value="dados">
+                                Banco de Dados
+                            </option>
+
+                            <option value="ia">
+                                Inteligência Artificial
+                            </option>
+
+                            <option value="games">
+                                Desenvolvimento de Jogos
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <!-- Termos -->
+
+                    <div class="remember">
+
+                        <label>
+
+                            <input type="checkbox" required>
+
+                            Concordo com os termos de uso.
+
+                        </label>
+
+                    </div>
+
+                    <button class="btn-primary login-btn" type="submit">
+
+                        Criar Conta
+
+                    </button>
+
+                </form>
+
+                <div class="divider">
+
+                    <span>ou</span>
+
+                </div>
+
+                <a href="login.html" class="register-link">
+
+                    Já possuo uma conta
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="js/storage.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/toast.js"></script>
+
+</body>
+
+</html>

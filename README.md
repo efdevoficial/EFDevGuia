@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://i.imgur.com/JtejKos.png" width="50%" alt="Banner EFDev">
+<img src="assets/images/banner-efdev.png" width="100%" alt="Banner EFDev">
 
 # EFDev - Guia para Programação
 
@@ -54,17 +54,17 @@ A proposta não é substituir cursos ou professores, mas ajudar o usuário a des
 
 ### Login e Cadastro
 
-<img src="https://i.imgur.com/hlASX1N.png" width="100%" alt="Demonstração Login">
+<img src="assets/images/Login modelo.png" width="100%" alt="Demonstração Login">
 
 ### Dashboard
 
-<img src="https://i.imgur.com/MOz0nih.png" width="100%" alt="Demonstração Dashboard">
+<img src="assets/images/Dashboard.png" width="100%" alt="Demonstração Dashboard">
 
 ### Roadmap e Quizzes
 
-<img src="https://i.imgur.com/IUYTZp0.png" width="100%" alt="Demonstração Roadmap">
-<img src="https://i.imgur.com/0l37kNR.png" width="100%" alt="Demonstração Quiz 01">
-<img src="https://i.imgur.com/ujPu5Qj.png" width="100%" alt="Demonstração Quiz 02">
+<img src="assets/images/Roadmap.png" width="100%" alt="Demonstração Roadmap">
+<img src="assets/images/Quiz 01.png" width="100%" alt="Demonstração Quiz 01">
+<img src="assets/images/Quiz 02.png" width="100%" alt="Demonstração Quiz 02">
 
 ---
 

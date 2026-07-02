@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferramentas | EFDev</title>
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/ferramentas.css">
+    <link rel="stylesheet" href="css/toast.css">
+    <link rel="shortcut icon" href="assets/logos/Logo EFDev.png" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <main class="dashboard-layout">
+
+        <aside class="sidebar">
+           <div class="sidebar-logo">
+
+                <img src="assets/logos/Logo EFDev.png" alt="EFDev">
+
+            </div>
+
+            <nav class="sidebar-menu">
+                <a href="dashboard.html" class="active">🏠 Dashboard</a>
+                <a href="perfil.html">👤 Perfil</a>
+                <a href="conquistas.html">🏆 Conquistas</a>
+                <a href="instituicoes.html">🎓 Instituições</a>
+                <a href="ferramentas.html">🛠 Ferramentas</a>
+                <a href="sobre.html">ℹ️ Sobre</a>
+                <a href="configuracoes.html">⚙️ Configurações</a>
+            </nav>
+        </aside>
+
+        <section class="dashboard-content">
+
+            <header class="dashboard-header">
+                <div>
+                    <h1>🛠️ Ferramentas</h1>
+                    <p>Conheça ferramentas importantes para começar na programação.</p>
+                </div>
+            </header>
+
+            <section class="filters-box">
+                <input type="text" id="searchTool" placeholder="Pesquisar ferramenta...">
+
+                <select id="filterCategory">
+                    <option value="todos">Todas as categorias</option>
+                    <option value="Editor">Editor</option>
+                    <option value="Versionamento">Versionamento</option>
+                    <option value="Portfólio">Portfólio</option>
+                    <option value="Banco de Dados">Banco de Dados</option>
+                    <option value="IDE">IDE</option>
+                    <option value="Design">Design</option>
+                    <option value="API">API</option>
+                </select>
+            </section>
+
+            <section class="tools-grid" id="toolsGrid"></section>
+
+        </section>
+
+    </main>
+
+    <script src="js/storage.js"></script>
+    <script src="data/ferramentas.js"></script>
+    <script src="js/ferramentas.js"></script>
+    <script src="js/toast.js"></script>
+</body>
+
+</html>

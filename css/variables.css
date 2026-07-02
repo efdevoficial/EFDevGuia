@@ -1,0 +1,46 @@
+:root {
+
+    /* Cores principais */
+    --primary: #1D4ED8;
+    --primary-dark: #1E40AF;
+    --secondary: #60A5FA;
+
+    /* Estados */
+    --success: #22C55E;
+    --warning: #FACC15;
+    --danger: #EF4444;
+
+    /* Fundo */
+    --background: #0A0F1F;
+    --background-soft: #101827;
+
+    /* Cards */
+    --card: #162033;
+    --card-hover: #1E293B;
+
+    /* Textos */
+    --text: #F8FAFC;
+    --text-secondary: #94A3B8;
+    --muted: #64748B;
+
+    /* Bordas */
+    --border: rgba(255,255,255,.08);
+    --border-hover: rgba(29,78,216,.45);
+
+    /* Gradientes */
+    --gradient-primary: linear-gradient(135deg,#2563EB,#60A5FA);
+    --gradient-dark: linear-gradient(135deg,#0A0F1F,#101827);
+
+    /* Sombras */
+    --shadow: 0 20px 60px rgba(0,0,0,.35);
+    --shadow-blue: 0 20px 60px rgba(37,99,235,.25);
+
+    /* Raios */
+    --radius-sm: 10px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+    --radius-xl: 32px;
+
+    --transition: .3s ease;
+
+}

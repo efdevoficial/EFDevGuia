@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conquistas | EFDev</title>
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/conquistas.css">   
+    <link rel="shortcut icon" href="assets/logos/Logo EFDev.png" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <main class="dashboard-layout">
+
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+
+                <img src="assets/logos/Logo EFDev.png" alt="EFDev">
+
+            </div>
+
+            <nav class="sidebar-menu">
+                <a href="dashboard.html" class="active">🏠 Dashboard</a>
+                <a href="perfil.html">👤 Perfil</a>
+                <a href="conquistas.html">🏆 Conquistas</a>
+                <a href="instituicoes.html">🎓 Instituições</a>
+                <a href="ferramentas.html">🛠 Ferramentas</a>
+                <a href="sobre.html">ℹ️ Sobre</a>
+                <a href="configuracoes.html">⚙️ Configurações</a>
+            </nav>
+        </aside>
+
+        <section class="dashboard-content">
+
+            <header class="dashboard-header">
+                <div>
+                    <h1>🏆 Conquistas</h1>
+                    <p>Acompanhe suas medalhas e evolução dentro da EFDev.</p>
+                </div>
+            </header>
+
+            <section class="stats-grid">
+                <article class="stat-card">
+                    <span>Total de Conquistas</span>
+                    <h2 id="totalAchievements">0</h2>
+                    <p>Medalhas disponíveis</p>
+                </article>
+
+                <article class="stat-card">
+                    <span>Desbloqueadas</span>
+                    <h2 id="unlockedAchievements">0</h2>
+                    <p>Conquistas alcançadas</p>
+                </article>
+
+                <article class="stat-card">
+                    <span>XP Atual</span>
+                    <h2 id="achievementXP">0</h2>
+                    <p>Pontos acumulados</p>
+                </article>
+            </section>
+
+            <section class="achievements-grid" id="achievementsGrid"></section>
+
+        </section>
+
+    </main>
+
+    <script src="js/storage.js"></script>
+    <script src="data/conquistas.js"></script>
+    <script src="js/conquistas.js"></script>
+    <script src="js/toast.js"></script>
+</body>
+
+</html>

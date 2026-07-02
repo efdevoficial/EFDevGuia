@@ -1,0 +1,72 @@
+.settings-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+}
+
+.settings-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 22px;
+    padding: 30px;
+}
+
+.settings-card h2 {
+    margin-bottom: 25px;
+}
+
+.settings-card p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.settings-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.settings-card label {
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+.settings-card input,
+.settings-card select {
+    width: 100%;
+    padding: 16px;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    background: rgba(255,255,255,.04);
+    color: var(--text);
+    outline: none;
+}
+
+.settings-card input:focus,
+.settings-card select:focus {
+    border-color: var(--primary);
+}
+
+.settings-card button {
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.danger-btn {
+    width: 100%;
+    padding: 15px;
+    border-radius: 14px;
+    background: rgba(239,68,68,.15);
+    color: var(--danger);
+    border: 1px solid rgba(239,68,68,.35);
+    cursor: pointer;
+    font-weight: 700;
+}
+
+@media(max-width: 900px) {
+    .settings-grid {
+        grid-template-columns: 1fr;
+    }
+}

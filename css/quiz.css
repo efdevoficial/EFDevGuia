@@ -1,0 +1,345 @@
+/* =====================================================
+   QUIZ
+===================================================== */
+
+.quiz-wrapper{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:30px;
+
+}
+
+/* =====================================================
+   TOPO
+===================================================== */
+
+.quiz-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:var(--card);
+
+    padding:25px;
+
+    border-radius:18px;
+
+    border:1px solid var(--border);
+
+}
+
+.quiz-top strong{
+
+    font-size:20px;
+
+}
+
+.quiz-top p{
+
+    color:var(--text-secondary);
+
+    margin-top:8px;
+
+}
+
+#quizXp{
+
+    background:rgba(34,197,94,.15);
+
+    color:var(--success);
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    font-weight:700;
+
+}
+
+/* =====================================================
+   BARRA
+===================================================== */
+
+.quiz-progress{
+
+    margin-top:-10px;
+
+}
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.quiz-card{
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:25px;
+
+    padding:45px;
+
+    animation:fadeUp .5s;
+
+}
+
+.quiz-card h2{
+
+    margin-bottom:35px;
+
+    font-size:30px;
+
+    line-height:1.5;
+
+}
+
+/* =====================================================
+   RESPOSTAS
+===================================================== */
+
+.answers-box{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.answer{
+
+    width:100%;
+
+    padding:22px;
+
+    background:#162033;
+
+    border:2px solid transparent;
+
+    border-radius:18px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    color:var(--text);
+
+    font-size:17px;
+
+    text-align:left;
+
+}
+
+.answer:hover{
+
+    border-color:var(--primary);
+
+    transform:translateX(8px);
+
+}
+
+.answer.selected{
+
+    border-color:var(--primary);
+
+    background:rgba(124,58,237,.15);
+
+}
+
+.answer.correct{
+
+    border-color:var(--success);
+
+    background:rgba(34,197,94,.15);
+
+}
+
+.answer.wrong{
+
+    border-color:var(--danger);
+
+    background:rgba(239,68,68,.15);
+
+}
+
+/* =====================================================
+   BOTÃO
+===================================================== */
+
+#nextQuestion{
+
+    margin-top:35px;
+
+    width:100%;
+
+    height:55px;
+
+    border:none;
+
+    cursor:pointer;
+
+    font-size:17px;
+
+}
+
+/* =====================================================
+   RESULTADO
+===================================================== */
+
+.result-box{
+
+    margin-top:35px;
+
+    background:var(--card);
+
+    border-radius:25px;
+
+    border:1px solid var(--border);
+
+    padding:60px;
+
+    text-align:center;
+
+    animation:fadeUp .5s;
+
+}
+
+.result-box.hidden{
+
+    display:none;
+
+}
+
+.result-emoji{
+
+    font-size:90px;
+
+    margin-bottom:25px;
+
+}
+
+.result-box h2{
+
+    font-size:42px;
+
+    margin-bottom:20px;
+
+}
+
+.result-box p{
+
+    color:var(--text-secondary);
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+.result-actions{
+
+    margin-top:40px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+/* =====================================================
+   ANIMAÇÕES
+===================================================== */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* =====================================================
+   RESPONSIVO
+===================================================== */
+
+@media(max-width:900px){
+
+    .quiz-top{
+
+        flex-direction:column;
+
+        gap:20px;
+
+        align-items:flex-start;
+
+    }
+
+    .quiz-card{
+
+        padding:30px;
+
+    }
+
+    .quiz-card h2{
+
+        font-size:24px;
+
+    }
+
+    .result-box{
+
+        padding:35px;
+
+    }
+
+    .result-actions{
+
+        flex-direction:column;
+
+    }
+
+    .result-actions a,
+
+    .result-actions button{
+
+        width:100%;
+
+    }
+
+}
+
+.quiz-explanation {
+    margin-top: 20px;
+    padding: 18px;
+    border-radius: 16px;
+    background: rgba(124, 58, 237, 0.12);
+    border: 1px solid rgba(124, 58, 237, 0.35);
+}
+
+.quiz-explanation p {
+    margin-top: 8px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
